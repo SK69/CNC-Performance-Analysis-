@@ -28,7 +28,7 @@ public class FileWatcher {
     {
         FileSystem fs = FileSystems.getDefault();
         WatchService ws = fs.newWatchService();
-        Path pTemp = Paths.get("R:\\New Folder");
+        Path pTemp = Paths.get("S:\\tesfile");
         String path;
         pTemp.register(ws, new WatchEvent.Kind[] {ENTRY_MODIFY, ENTRY_CREATE, ENTRY_DELETE}, FILE_TREE);
         while(true)
@@ -59,14 +59,31 @@ public class FileWatcher {
 //To store the contents read via File Reader
     BufferedReader br = new BufferedReader(fr);                                                 
 //Read br and store a line in 'data', print data
-    String data;
-    while((data=br.readLine( )) != null) 
+    String data=br.readLine();
+    while(data != null) 
 {
-    //data = br.readLine( );                                     
     System.out.println(data);
+    
+    //String[] column = data.split("-");
+    //System.out.println( column);
+    
+    //String[] array1 = data.split("-");
+    //String[] array2 = array1[1].split(" ");
+    //for (int i=0; i<array2.length; i++)
+     //   System.out.println("array1:" + array1 );
+      //  System.out.println("array2:"+array2);
+    
+    
+    
+    //data = br.readLine( );  
+    //String[] tokens = br.readLine().split("-");    
+    //System.out.println(tokens);
+    //System.out.println(data);
 }                                
 }
         catch(IOException e){System.out.println("bad !");
                 }
+        
+        
       }
 }
