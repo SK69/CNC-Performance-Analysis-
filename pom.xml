@@ -21,5 +21,19 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.xebialabs.overthere/nio-overthere -->
+    <dependency>
+      <groupId>com.xebialabs.overthere</groupId>
+      <artifactId>nio-overthere</artifactId>
+      <version>1.0.0-beta-1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>r05</version>
+    </dependency>
+
+
   </dependencies>
 </project>
