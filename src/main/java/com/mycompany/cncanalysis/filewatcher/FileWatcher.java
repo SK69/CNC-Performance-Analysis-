@@ -27,7 +27,7 @@ public class FileWatcher {
     {
         FileSystem fs = FileSystems.getDefault();
         WatchService ws = fs.newWatchService();
-        Path pTemp = Paths.get("S:\\tesfile");
+        Path pTemp = Paths.get("R:\\New Folder");
         String path;
         pTemp.register(ws, new WatchEvent.Kind[] {ENTRY_MODIFY, ENTRY_CREATE, ENTRY_DELETE}, FILE_TREE);
         while(true)
@@ -50,13 +50,10 @@ public class FileWatcher {
     public static void readFile(Path path) throws IOException {
 
         Scanner scan = new Scanner(path);
-
         while (scan.hasNext())
         {
             String[] tokens = scan.nextLine().split("-");
             String last  = tokens[tokens.length-1];
-            System.out.println(last);
-
         }
 
     }
