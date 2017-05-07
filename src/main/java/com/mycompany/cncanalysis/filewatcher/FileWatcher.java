@@ -7,9 +7,6 @@
 package com.mycompany.cncanalysis.filewatcher;
 
 import  static com.sun.nio.file.ExtendedWatchEventModifier.FILE_TREE;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
